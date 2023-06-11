@@ -52,7 +52,7 @@ body {
 
 .header {
   display: flex;
-  margin: 10px 200px 116px 200px;
+  margin: 10px 200px 116px 170px;
   width: 1040px;
   height: 104px;
   padding: 24px 0 24px;
@@ -73,7 +73,7 @@ body {
 
 .header__items_right {
   display: flex;
-  margin-left: 446px;
+  margin-left: 460px;
   gap: 18px;
   align-items: center;
 }
@@ -224,7 +224,7 @@ body {
 }
 .container {
   display: flex;
-  gap: 135px;
+  gap: 105px;
   justify-content: center;
   margin-bottom: 100px;
 }
