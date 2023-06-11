@@ -47,6 +47,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   background-color: #242731;
+
 }
 
 .header {
@@ -55,6 +56,8 @@ body {
   width: 1040px;
   height: 104px;
   padding: 24px 0 24px;
+  position: relative;
+  z-index: +1;
 }
 
 .header__logo {
@@ -254,6 +257,8 @@ body {
 
 .right_block {
   display: flex;
+  position: relative;
+  z-index: +1;
 }
 
 .right_block-h3,
@@ -296,12 +301,27 @@ body {
   margin-bottom: 20px;
 }
 
+.button:focus{
+  background: #490410;
+}
+.button:active{
+  background: #036c40;
+}
+
+
+
 .form-input {
   width: 286px;
   height: 46px;
   border: none;
   background: #272d3d;
   border-radius: 4.48087px;
+font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #D7D7D7;
 }
 
 .form {
@@ -331,4 +351,82 @@ body {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px rgb(72, 72, 72);
+}
+
+.form-input._error {
+  box-shadow: 1 1 15px red;
+  background: #b8a6f1;
+}
+.form * {
+  outline: none;
+}
+.form-input:focus {
+  background: #070b1c;
+}
+
+/* decor++++++++++++++++++++++++++++++++++++++ */
+.light_left {
+  position: absolute;
+    width: 399.01px;
+    height: 400.31px;
+    left: -31.33px;
+    bottom: 489.69px;
+  
+    background: #332F65;
+    opacity: 0.5;
+    filter: blur(103.131px);
+    transform: rotate(9.41deg);
+    }
+.light_right {
+  position: absolute;
+    width: 490.65px;
+    height: 393.23px;
+    left: 1000px;
+    bottom: 342.77px;
+  
+    background: #332F65;
+    opacity: 0.8;
+    filter: blur(103.131px);
+    transform: rotate(9.41deg);
+}
+
+
+/* +++++++++++++++++++++ position ++++++++++ */
+.icons {
+  display: flex;
+
+ }
+.icons__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 35px;
+  margin-left: 37px;
+}
+.icons__position-right {
+    display: flex;
+      flex-direction: column;
+  gap:80px;
+}
+
+
+
+.position__right,
+.position__right-bottom {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.position__right-bottom {
+align-items: flex-end;
+
+}
+
+.position__left {
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between
+
 }
