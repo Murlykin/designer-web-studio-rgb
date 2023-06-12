@@ -97,7 +97,7 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 8px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 @media screen and (min-width: 1200px) {
   .header__item {

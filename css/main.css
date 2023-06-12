@@ -53,7 +53,9 @@ body {
 
 /* ========= color========================== */
 :root {
-  --text-color: #212121;
+  --text-color: #ffffff;
+  --circle-color: #332f65;
+  --title-color: #ff3459;
 }
 
 .header {
@@ -175,7 +177,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 8px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -234,7 +236,7 @@ body {
   line-height: 24px;
   margin-left: auto;
   margin-right: auto;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -250,7 +252,7 @@ body {
   font-size: 52.7273px;
   line-height: 65px;
   text-transform: uppercase;
-  color: #ff3459;
+  color: var(--title-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -266,7 +268,7 @@ body {
 }
 
 .left__block-label {
-  background: #ff3459;
+  background: var(--title-color);
   border-radius: 5px;
   -webkit-transform: rotate(-3.51deg);
           transform: rotate(-3.51deg);
@@ -289,7 +291,7 @@ body {
   padding: 4px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -313,7 +315,7 @@ body {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 15px;
   line-height: 18px;
 }
@@ -329,7 +331,7 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 148%;
-  color: #ffffff;
+  color: var(--text-color);
   text-align: center;
   width: 328px;
 }
@@ -351,7 +353,7 @@ body {
   font-weight: 700;
   font-size: 17.332px;
   line-height: 148%;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .left__block-bonus {
@@ -383,7 +385,7 @@ body {
   font-size: 13px;
   line-height: 120%;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .left__block-text-h4-color {
@@ -396,7 +398,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 160%;
-  color: #ffffff;
+  color: var(--text-color);
   width: 161px;
 }
 
@@ -411,7 +413,7 @@ body {
   font-weight: 700;
   font-size: 12px;
   line-height: 148%;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .left__block_text {
@@ -419,7 +421,7 @@ body {
   font-style: normal;
   font-size: 12px;
   line-height: 148%;
-  color: #ffffff;
+  color: var(--text-color);
   width: 202px;
 }
 
@@ -470,7 +472,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .right_block__text {
@@ -479,7 +481,7 @@ body {
 }
 
 .right_block-h3-color {
-  color: #ff3459;
+  color: var(--title-color);
 }
 
 .container__block {
@@ -506,23 +508,25 @@ body {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--text-color);
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 1200px) {
-  .button {
-    background: #ff3459;
-  }
+  -webkit-transition: color 400ms ease-in, background-color 400ms ease-in, -webkit-box-shadow 400ms ease-in;
+  transition: color 400ms ease-in, background-color 400ms ease-in, -webkit-box-shadow 400ms ease-in;
+  transition: box-shadow 400ms ease-in, color 400ms ease-in, background-color 400ms ease-in;
+  transition: box-shadow 400ms ease-in, color 400ms ease-in, background-color 400ms ease-in, -webkit-box-shadow 400ms ease-in;
 }
 .button:focus {
   background: #490410;
 }
-
 .button:active {
   background: #036c40;
 }
 
+@media screen and (min-width: 1200px) {
+  .button {
+    background: var(--title-color);
+  }
+}
 .form-input {
   width: 286px;
   height: 46px;
@@ -581,9 +585,9 @@ body {
 .footer {
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 0px;
   font-size: 0px;
-  line-height: 158px;
+  line-height: 0px;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px rgb(72, 72, 72);
@@ -602,7 +606,7 @@ body {
   }
 }
 .light_left {
-  background: #332f65;
+  background: var(--circle-color);
   opacity: 0.5;
   -webkit-filter: blur(103.131px);
           filter: blur(103.131px);
@@ -625,7 +629,7 @@ body {
   left: 0px;
   bottom: 142.77px;
   position: relative;
-  background: #332f65;
+  background: var(--circle-color);
   opacity: 0.8;
   -webkit-filter: blur(103.131px);
           filter: blur(103.131px);
@@ -641,7 +645,7 @@ body {
     height: 393.23px;
     left: 1000px;
     bottom: 342.77px;
-    background: #332f65;
+    background: var(--circle-color);
     opacity: 0.8;
     -webkit-filter: blur(103.131px);
             filter: blur(103.131px);

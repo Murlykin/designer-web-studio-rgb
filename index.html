@@ -123,6 +123,7 @@
                   class="form-input"
                   required
                   placeholder="Ваше имя и фамилия"
+                  pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                 />
               </div>
               <div id="login" onsubmit="process(event)" class="form">
@@ -133,6 +134,7 @@
                   required
                   class="form-input"
                   placeholder="Ваш номер телефона"
+                  pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                 />
               </div>
               <div class="form">

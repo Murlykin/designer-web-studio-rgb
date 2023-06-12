@@ -13,7 +13,7 @@
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .right_block__text {
@@ -22,7 +22,7 @@
 }
 
 .right_block-h3-color {
-    color: #ff3459;
+    color: var(--title-color);
 }
 
 .container__block {
@@ -51,21 +51,22 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
-    color: #ffffff;
+    color: var(--text-color);
     margin-bottom: 20px;
+    transition: box-shadow 400ms ease-in, color 400ms ease-in, background-color 400ms ease-in;
+    &:focus {
+            background: #490410;
+        }
+    
+        &:active {
+            background: #036c40;
+        }
 }
 
 @media screen and (min-width: 1200px) {
     .button {
-        background: #ff3459;
+        background: var(--title-color);
     }
-}
-.button:focus {
-    background: #490410;
-}
-
-.button:active {
-    background: #036c40;
 }
 
 .form-input {
