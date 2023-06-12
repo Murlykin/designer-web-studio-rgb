@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     z-index: +1;
+    align-items: center;
 }
 
 .right_block-h3,
@@ -29,13 +30,21 @@
     height: 474px;
     background: #303a53;
     border-radius: 10px;
+    margin-top: -300px;
 }
+
+@media screen and (min-width: 1200px) {
+.container__block {
+        margin-top: 0px;
+    }
+}
+
 
 .button {
     width: 248px;
     height: 51px;
     border: none;
-    background: #ff3459;
+    background: #0048FF;
     border-radius: 5px;
     font-family: "Gilroy";
     font-style: normal;
@@ -46,6 +55,11 @@
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+    .button {
+        background: #ff3459;
+    }
+}
 .button:focus {
     background: #490410;
 }

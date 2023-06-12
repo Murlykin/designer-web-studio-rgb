@@ -3,10 +3,11 @@
   gap: 105px;
   justify-content: center;
   margin-bottom: 100px;
+  
+    flex-direction: column;
 }
 
-.container,
-.right_block {
-  display: flex;
-  align-items: center;
-}
+@media screen and (min-width: 1200px) {
+  .container {
+      flex-direction: row;
+  }}

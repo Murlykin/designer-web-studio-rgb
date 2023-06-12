@@ -21,12 +21,12 @@
           <img src="./images/Shape.png" alt="Logo" class="logo" />
         </div>
         <div class="header__logo-text">
-          <img src="./images/ACADEMY.png" alt="Logo" class="logo" />
-          <img src="./images/POWERCODE.png" alt="Logo" class="logo" />
+          <img src="./images/POWERCODE.png" alt="Logo" class="logo__powercode" />
+          <img src="./images/ACADEMY.png" alt="Logo" class="logo__academy" />
         </div>
         <!-- <p>Powercode academy</p> -->
       </div>
-      <!-- Buton=========================================== -->
+      <!-- Button=========================================== -->
 
       <ul class="header__items_right">
         <li class="header__item">
@@ -43,6 +43,7 @@
         </li>
       </ul>
     </header>
+
     <main>
       <div class="container">
         <section class="left__block">
@@ -66,14 +67,11 @@
               <p class="text">
                 Узнайте какими навыками должен обладать фронтенд разработчик в
                 2022 году и как начать карьеру в востебованной профессии с
-                <br />
-                зраплатой
-
-                <span class="left__block-wage"> от 1 000$ </span>
+                 зраплатой <span class="left__block-wage"> от 1 000$ </span>
               </p>
             </div>
           </div>
-          <div>
+          <div class="left__block-media">
             <div class="left__block-speaker">
               <img
                 src="./images/speaker.png"
@@ -117,7 +115,8 @@
                 <input
                   id="formName"
                   type="text"
-                  class="form-input _req"
+                  class="form-input"
+                  required
                   placeholder="Ваше имя и фамилия"
                 />
               </div>
@@ -126,7 +125,8 @@
                   id="phone"
                   type="tel"
                   name="phone"
-                  class="form-input _req"
+                  required
+                  class="form-input"
                   placeholder="Ваш номер телефона"
                 />
               </div>
@@ -135,9 +135,10 @@
                   id="formEmail"
                   type="text"
                   name="email"
-                  class="form-input _req _email"
+                  required
+                  class="form-input _req"
                   placeholder="Ваш email"
-                />
+                  pattern=           />
               </div>
               <button class="button" type="submit">Записаться бесплатно</button>
             </form>
@@ -230,7 +231,7 @@
       <p>front-end developer</p>
     </footer>
   </body>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
   <script>
     const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
