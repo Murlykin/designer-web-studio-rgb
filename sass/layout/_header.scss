@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    margin: 10px 200px 116px 170px;
+    width: 1040px;
+    height: 104px;
+    padding: 24px 0 24px;
+    position: relative;
+    z-index: +1;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-text {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.header__items_right {
+    display: flex;
+    margin-left: 460px;
+    gap: 18px;
+    align-items: center;
+}
+
+.header__item {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    background: #302e5a;
+    border-radius: 10px;
+    width: 141px;
+    height: 40px;
+}
+
+.header__item-text {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+}

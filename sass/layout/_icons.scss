@@ -1,0 +1,35 @@
+.icons {
+    display: flex;
+}
+
+.icons__position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 35px;
+    margin-left: 37px;
+}
+
+.icons__position-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.position__right,
+.position__right-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.position__right-bottom {
+    align-items: flex-end;
+}
+
+.position__left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between
+}

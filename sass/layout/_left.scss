@@ -1,0 +1,153 @@
+.left__block {
+  width: 460px;
+  height: 473.99px;
+}
+
+.left__block-button {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  background: #4252d1;
+  border-radius: 10px;
+  width: 119px;
+  height: 32px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.left__block-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 77px;
+  line-height: 94px;
+  text-transform: uppercase;
+
+  color: #ff3459;
+}
+
+.container__text {
+  width: 419px;
+  height: 108px;
+  padding: 0 7px 0 1px;
+}
+
+.left__block-label {
+  background: #ff3459;
+  border-radius: 5px;
+  transform: rotate(-3.51deg);
+  width: 106px;
+  height: 38px;
+}
+
+.left__block-text_l {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 23.6391px;
+  line-height: 29px;
+  padding: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.left__block-b {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.left__block-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.9494px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 148%;
+  color: #ffffff;
+}
+
+.left__block-wage {
+  background: #4252d1;
+  border-radius: 3px;
+  width: 90px;
+  height: 27px;
+  text-align: center;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.332px;
+  line-height: 148%;
+  color: #ffffff;
+}
+
+.left__block-bonus {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.left__block-speaker {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 52px;
+}
+
+.left__block-text-h4,
+.left__block-text-h4-color {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.left__block-text-h4-color {
+  color: #4252d1;
+}
+
+.left__block-speaker-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.left__block_text-h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 148%;
+  color: #ffffff;
+}
+
+.left__block_text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 148%;
+  color: #ffffff;
+}
