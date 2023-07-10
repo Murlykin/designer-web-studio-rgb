@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     async function formSend(e) {
         e.preventDefault();
         let error = formValidate(form);
-        
+        console.log(error)
     
         let formData = new FormData (form)
 
-        if (error === 0) {
+        if (error === undefined) {
             form.classList.add('_sending');
             let response = await fetch('sendmail.php', {
                 method: 'POST',

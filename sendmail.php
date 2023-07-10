@@ -9,5 +9,6 @@ $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
 
-$mail->addAddress('designer.web.studio.rgb@gmail.com');
+$mail->addAddress('rould2012@gmail.com');
 
+?>
