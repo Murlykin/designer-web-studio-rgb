@@ -1,6 +1,19 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 *,
@@ -49,6 +62,13 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   background-color: #242731;
+  margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1500px;
+    height: 940px;
+  }
 }
 
 /* ========= color========================== */
@@ -59,12 +79,8 @@ body {
 }
 
 @font-face {
-  font-family: "fontd90fa984926d3745c7e68bc525692c26";
-  src: url("https://nomail.com.ua/files/eot/d90fa984926d3745c7e68bc525692c26.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/d90fa984926d3745c7e68bc525692c26.woff") format("woff"), url("https://nomail.com.ua/files/woff2/d90fa984926d3745c7e68bc525692c26.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Gilroy-Light";
-  src: local("Gilroy"), url("https://nomail.com.ua/files/woff/d90fa984926d3745c7e68bc525692c26.woff") format("woff");
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-ExtraBold.otf") format("woff2");
 }
 .header {
   display: -webkit-box;
@@ -218,8 +234,12 @@ body {
   }
 }
 .left__block {
-  width: 460px;
   height: 473.99px;
+}
+@media screen and (min-width: 1200px) {
+  .left__block {
+    width: 460px;
+  }
 }
 
 .left__block-button {
@@ -270,9 +290,13 @@ body {
   }
 }
 .container__text {
-  width: 419px;
   height: 108px;
   padding: 0 7px 0 1px;
+}
+@media screen and (min-width: 1200px) {
+  .container__text {
+    width: 419px;
+  }
 }
 
 .left__block-label {
@@ -283,13 +307,13 @@ body {
   width: 76.26px;
   height: 27.53px;
 }
-
 @media screen and (min-width: 1200px) {
   .left__block-label {
     width: 106px;
     height: 38px;
   }
 }
+
 .left__block-text_l {
   font-family: "Gilroy";
   font-style: normal;
@@ -599,8 +623,8 @@ body {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px rgb(72, 72, 72);
+  text-align: center;
 }
-
 @media screen and (min-width: 1200px) {
   .footer {
     font-family: "Gilroy";
@@ -613,6 +637,7 @@ body {
     -webkit-text-stroke: 1px rgb(72, 72, 72);
   }
 }
+
 .light_left {
   background: var(--circle-color);
   opacity: 0.5;
@@ -632,10 +657,8 @@ body {
   }
 }
 .light_right {
-  width: 490.65px;
-  height: 393.23px;
+  height: 200px;
   left: 0px;
-  bottom: 142.77px;
   position: relative;
   background: var(--circle-color);
   opacity: 0.8;
@@ -645,7 +668,6 @@ body {
           transform: rotate(9.41deg);
   z-index: -1;
 }
-
 @media screen and (min-width: 1200px) {
   .light_right {
     position: absolute;
@@ -661,6 +683,7 @@ body {
             transform: rotate(9.41deg);
   }
 }
+
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
